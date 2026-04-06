@@ -20,25 +20,20 @@
 - Установленные зависимости (см. `requirements.txt`)
 
 4 Установка и запуск из исходников
-
-1. Клонируйте репозиторий:
    
-   git clone https://github.com/Bipolar123123/gui_test.git
-   cd gui_test
-   
-3. Создайте виртуальное окружение (рекомендуется):
+1. Создайте виртуальное окружение (рекомендуется):
 
 python -m venv venv
 venv\Scripts\activate 
 
-3. Установите зависимости:
+2. Установите зависимости:
 
 pip install -r requirements.txt
 
-4. Запустите приложение:
+3. Запустите приложение:
 
 python gui\test_runner.py
 
-5.Сборка исполняемого файла (.exe)
+4.Сборка исполняемого файла (.exe)
 
 python -m PyInstaller --onefile --windowed --name "TestRunner" --add-data "tests;tests" --add-data "my_project;my_project" gui\test_runner.py
